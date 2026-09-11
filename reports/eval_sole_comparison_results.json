@@ -1,0 +1,388 @@
+{
+  "Baseline Co-trained (Diverse NLA, Cosine Loss)": {
+    "mean_v_mae": 0.8748288559913635,
+    "mean_logit_mae": 24.853976821899415,
+    "mean_cos": 0.57751953125,
+    "pos_results": [
+      {
+        "name": "Position 63: Balanced Ruy Lopez Opening",
+        "idx": 63,
+        "fen": "r1bqk2r/pppp1ppp/2n2n2/1Bb1p3/4P3/2P2N2/PP1P1PPP/RNBQ1RK1 b kq - 0 5",
+        "rollout": "Looking for a mistake that weakens your opponent's passive opponent's passive. Tactical rationale: castles the knight to gain control of the center. Recommended plan: Focus on improving active piece activity and passive passive tactical advantages.",
+        "true_logit": -0.10450581461191177,
+        "true_v": -0.10412701964378357,
+        "recon_logit": 31.697765350341797,
+        "recon_v": 1.0,
+        "cos_sim": 0.2890625,
+        "delta_v": 1.1041270196437836,
+        "delta_logit": 31.80227116495371,
+        "interventions": [
+          {
+            "label": "White Decisive Win",
+            "logit": 24.80507469177246,
+            "v": 1.0
+          },
+          {
+            "label": "Dead Equal / Balanced",
+            "logit": 24.632341384887695,
+            "v": 1.0
+          },
+          {
+            "label": "White Severe Deficit (Lost)",
+            "logit": 29.648557662963867,
+            "v": 1.0
+          }
+        ],
+        "steer_swing": 0.0
+      },
+      {
+        "name": "Position 95: Contested Knight Endgame",
+        "idx": 95,
+        "fen": "8/p4kpp/1pp5/1P1p1P2/P1nPp1P1/2N1P3/5K1P/8 b - - 0 33",
+        "rollout": "Looking at the board, Kd4 stands out as an inaccuracy. It basically repositions the rook to a more active board position. Strategically, you should improve your active piece activity.",
+        "true_logit": -0.12095095217227936,
+        "true_v": -0.12036458402872086,
+        "recon_logit": 30.017446517944336,
+        "recon_v": 1.0,
+        "cos_sim": 0.220703125,
+        "delta_v": 1.1203645840287209,
+        "delta_logit": 30.138397470116615,
+        "interventions": [
+          {
+            "label": "White Decisive Win",
+            "logit": 24.80507469177246,
+            "v": 1.0
+          },
+          {
+            "label": "Dead Equal / Balanced",
+            "logit": 24.632341384887695,
+            "v": 1.0
+          },
+          {
+            "label": "White Severe Deficit (Lost)",
+            "logit": 29.648557662963867,
+            "v": 1.0
+          }
+        ],
+        "steer_swing": 0.0
+      },
+      {
+        "name": "Position 102: Dead Even Rook Endgame",
+        "idx": 102,
+        "fen": "6N1/3k4/1R6/1bp1p1p1/4P1P1/1r1PKP2/8/8 b - - 0 54",
+        "rollout": "Looking at the board, Qd4+ stands out as a viable move. It basically creates a discovered attack with the rook against the pawn; captures the pawn; creates a passed pawn; creates a passed pawn threat; creates a threat against the pawn on d4; creates a threat against the pawn on e5.",
+        "true_logit": 0.0022761141881346703,
+        "true_v": 0.002276110230013728,
+        "recon_logit": 11.99631404876709,
+        "recon_v": 1.0,
+        "cos_sim": 0.2412109375,
+        "delta_v": 0.9977238897699863,
+        "delta_logit": 11.994037934578955,
+        "interventions": [
+          {
+            "label": "White Decisive Win",
+            "logit": 24.80507469177246,
+            "v": 1.0
+          },
+          {
+            "label": "Dead Equal / Balanced",
+            "logit": 24.632341384887695,
+            "v": 1.0
+          },
+          {
+            "label": "White Severe Deficit (Lost)",
+            "logit": 29.648557662963867,
+            "v": 1.0
+          }
+        ],
+        "steer_swing": 0.0
+      },
+      {
+        "name": "Position 163: Quiet Queenless Middlegame",
+        "idx": 163,
+        "fen": "6k1/1p1b1pbp/4p1p1/2BpP3/n2P3P/8/1PrN1PP1/1RR3K1 b - - 0 29",
+        "rollout": "Looking at the board, Qf3 looks like a mistake. Tactical analysis: The opponent's king is vulnerable; consider direct attacking possibilities.",
+        "true_logit": -0.0050290608778595924,
+        "true_v": -0.005029018502682447,
+        "recon_logit": 26.824071884155273,
+        "recon_v": 1.0,
+        "cos_sim": 0.384765625,
+        "delta_v": 1.0050290185026824,
+        "delta_logit": 26.829100945033133,
+        "interventions": [
+          {
+            "label": "White Decisive Win",
+            "logit": 24.80507469177246,
+            "v": 1.0
+          },
+          {
+            "label": "Dead Equal / Balanced",
+            "logit": 24.632341384887695,
+            "v": 1.0
+          },
+          {
+            "label": "White Severe Deficit (Lost)",
+            "logit": 29.648557662963867,
+            "v": 1.0
+          }
+        ],
+        "steer_swing": 0.0
+      },
+      {
+        "name": "Position 200: Moderate White Advantage",
+        "idx": 200,
+        "fen": "2rr2k1/pp3ppp/5n2/4p3/8/P1NPPB1q/1PPQ4/2RR3K w - - 0 20",
+        "rollout": "Looking at the board, moving B8 stands standby. It leaves the rook on B8 in a lost position. Tactical Review: You're up material - consider trading pieces to simplify toward a winning endgame.",
+        "true_logit": 1.0184787511825562,
+        "true_v": 0.7692462205886841,
+        "recon_logit": 25.52943992614746,
+        "recon_v": 1.0,
+        "cos_sim": 0.30859375,
+        "delta_v": 0.23075377941131592,
+        "delta_logit": 24.510961174964905,
+        "interventions": [
+          {
+            "label": "White Decisive Win",
+            "logit": 24.80507469177246,
+            "v": 1.0
+          },
+          {
+            "label": "Dead Equal / Balanced",
+            "logit": 24.632341384887695,
+            "v": 1.0
+          },
+          {
+            "label": "White Severe Deficit (Lost)",
+            "logit": 29.648557662963867,
+            "v": 1.0
+          }
+        ],
+        "steer_swing": 0.0
+      },
+      {
+        "name": "Position 10: Sharp Black Attack",
+        "idx": 10,
+        "fen": "3r4/p4pkp/1p2P1p1/2p1Qp2/5nq1/2P5/PP1N1P2/4RK2 b - - 1 28",
+        "rollout": "Looking at the board, (Qc2) is a brilliant tactical stroke. It creates a threat of creating a block against the pawn threat. The primary goal should be to improve your piece activity.",
+        "true_logit": -13.065688133239746,
+        "true_v": -1.0,
+        "recon_logit": 16.119823455810547,
+        "recon_v": 1.0,
+        "cos_sim": 0.55859375,
+        "delta_v": 2.0,
+        "delta_logit": 29.185511589050293,
+        "interventions": [
+          {
+            "label": "White Decisive Win",
+            "logit": 24.80507469177246,
+            "v": 1.0
+          },
+          {
+            "label": "Dead Equal / Balanced",
+            "logit": 24.632341384887695,
+            "v": 1.0
+          },
+          {
+            "label": "White Severe Deficit (Lost)",
+            "logit": 29.648557662963867,
+            "v": 1.0
+          }
+        ],
+        "steer_swing": 0.0
+      }
+    ]
+  },
+  "Eval-Sole Co-trained (Attached Output Layer, Eval Difference Loss)": {
+    "mean_v_mae": 0.39579729914665224,
+    "mean_logit_mae": 7.797747039794922,
+    "mean_cos": 0.57578125,
+    "pos_results": [
+      {
+        "name": "Position 63: Balanced Ruy Lopez Opening",
+        "idx": 63,
+        "fen": "r1bqk2r/pppp1ppp/2n2n2/1Bb1p3/4P3/2P2N2/PP1P1PPP/RNBQ1RK1 b kq - 0 5",
+        "rollout": "Looking for a mistake that weakens your opponent's king safety. Tactical: Fight for central control and control of the center\u533a\u5185\u754c\u7684\u6d3b\u585e\u3002",
+        "true_logit": -0.10450581461191177,
+        "true_v": -0.10412701964378357,
+        "recon_logit": 4.446135520935059,
+        "recon_v": 0.9997251629829407,
+        "cos_sim": 0.3046875,
+        "delta_v": 1.1038521826267242,
+        "delta_logit": 4.55064133554697,
+        "interventions": [
+          {
+            "label": "White Decisive Win",
+            "logit": 0.6315886378288269,
+            "v": 0.5591451525688171
+          },
+          {
+            "label": "Dead Equal / Balanced",
+            "logit": 0.6297203898429871,
+            "v": 0.5578596591949463
+          },
+          {
+            "label": "White Severe Deficit (Lost)",
+            "logit": 4.31090784072876,
+            "v": 0.9996398091316223
+          }
+        ],
+        "steer_swing": -0.4404946565628052
+      },
+      {
+        "name": "Position 95: Contested Knight Endgame",
+        "idx": 95,
+        "fen": "8/p4kpp/1pp5/1P1p1P2/P1nPp1P1/2N1P3/5K1P/8 b - - 0 33",
+        "rollout": "Looking at the board, moving B8 would be a mistake. It leaves the opponent in a precarious position. Tactical Focus on improving your block against the promoted pawn on B4.",
+        "true_logit": -0.12095095217227936,
+        "true_v": -0.12036458402872086,
+        "recon_logit": 6.049037456512451,
+        "recon_v": 0.999988853931427,
+        "cos_sim": 0.2353515625,
+        "delta_v": 1.1203534379601479,
+        "delta_logit": 6.1699884086847305,
+        "interventions": [
+          {
+            "label": "White Decisive Win",
+            "logit": 0.6315886378288269,
+            "v": 0.5591451525688171
+          },
+          {
+            "label": "Dead Equal / Balanced",
+            "logit": 0.6297203898429871,
+            "v": 0.5578596591949463
+          },
+          {
+            "label": "White Severe Deficit (Lost)",
+            "logit": 4.31090784072876,
+            "v": 0.9996398091316223
+          }
+        ],
+        "steer_swing": -0.4404946565628052
+      },
+      {
+        "name": "Position 102: Dead Even Rook Endgame",
+        "idx": 102,
+        "fen": "6N1/3k4/1R6/1bp1p1p1/4P1P1/1r1PKP2/8/8 b - - 0 54",
+        "rollout": "Looking at the board, Qd4+ stands out as a viable move. It basically creates a discovered attack with the rook against the pawn; captures the pawn; creates a passed pawn; creates a passed pawn threat; creates a threat against the pawn on d5; creates a threat against the pawn on d6.",
+        "true_logit": 0.0022761141881346703,
+        "true_v": 0.002276110230013728,
+        "recon_logit": -8.222664833068848,
+        "recon_v": -0.9999998807907104,
+        "cos_sim": 0.2490234375,
+        "delta_v": 1.0022759910207242,
+        "delta_logit": 8.224940947256982,
+        "interventions": [
+          {
+            "label": "White Decisive Win",
+            "logit": 0.6315886378288269,
+            "v": 0.5591451525688171
+          },
+          {
+            "label": "Dead Equal / Balanced",
+            "logit": 0.6297203898429871,
+            "v": 0.5578596591949463
+          },
+          {
+            "label": "White Severe Deficit (Lost)",
+            "logit": 4.31090784072876,
+            "v": 0.9996398091316223
+          }
+        ],
+        "steer_swing": -0.4404946565628052
+      },
+      {
+        "name": "Position 163: Quiet Queenless Middlegame",
+        "idx": 163,
+        "fen": "6k1/1p1b1pbp/4p1p1/2BpP3/n2P3P/8/1PrN1PP1/1RR3K1 b - - 0 29",
+        "rollout": "Looking at the board, Qf3 was a mistake. Tactical Analysis: Tactical Analysis\nWhy: creates a discovered position. Strategically, you should improve active piece activity and develop opponents weak points.",
+        "true_logit": -0.0050290608778595924,
+        "true_v": -0.005029018502682447,
+        "recon_logit": 5.0665130615234375,
+        "recon_v": 0.9999204874038696,
+        "cos_sim": 0.3828125,
+        "delta_v": 1.004949505906552,
+        "delta_logit": 5.071542122401297,
+        "interventions": [
+          {
+            "label": "White Decisive Win",
+            "logit": 0.6315886378288269,
+            "v": 0.5591451525688171
+          },
+          {
+            "label": "Dead Equal / Balanced",
+            "logit": 0.6297203898429871,
+            "v": 0.5578596591949463
+          },
+          {
+            "label": "White Severe Deficit (Lost)",
+            "logit": 4.31090784072876,
+            "v": 0.9996398091316223
+          }
+        ],
+        "steer_swing": -0.4404946565628052
+      },
+      {
+        "name": "Position 200: Moderate White Advantage",
+        "idx": 200,
+        "fen": "2rr2k1/pp3ppp/5n2/4p3/8/P1NPPB1q/1PPQ4/2RR3K w - - 0 20",
+        "rollout": "Looking at the board, Qd1 stands out as a viable move. Tactical Consider that the piece on Qd1 is a tactical blunder. You should You're up material - consider trading pieces to simplify toward a winning endgame.",
+        "true_logit": 1.0184787511825562,
+        "true_v": 0.7692462205886841,
+        "recon_logit": 9.552910804748535,
+        "recon_v": 1.0,
+        "cos_sim": 0.306640625,
+        "delta_v": 0.23075377941131592,
+        "delta_logit": 8.534432053565979,
+        "interventions": [
+          {
+            "label": "White Decisive Win",
+            "logit": 0.6315886378288269,
+            "v": 0.5591451525688171
+          },
+          {
+            "label": "Dead Equal / Balanced",
+            "logit": 0.6297203898429871,
+            "v": 0.5578596591949463
+          },
+          {
+            "label": "White Severe Deficit (Lost)",
+            "logit": 4.31090784072876,
+            "v": 0.9996398091316223
+          }
+        ],
+        "steer_swing": -0.4404946565628052
+      },
+      {
+        "name": "Position 10: Sharp Black Attack",
+        "idx": 10,
+        "fen": "3r4/p4pkp/1p2P1p1/2p1Qp2/5nq1/2P5/PP1N1P2/4RK2 b - - 1 28",
+        "rollout": "Looking at the board, (Qc2) is a brilliant tactical stroke. Tactical Strategy: You should You're still a serious player - you need to improve your active piece activity.",
+        "true_logit": -13.065688133239746,
+        "true_v": -1.0,
+        "recon_logit": -10.354178428649902,
+        "recon_v": -1.0,
+        "cos_sim": 0.70703125,
+        "delta_v": 0.0,
+        "delta_logit": 2.7115097045898438,
+        "interventions": [
+          {
+            "label": "White Decisive Win",
+            "logit": 0.6315886378288269,
+            "v": 0.5591451525688171
+          },
+          {
+            "label": "Dead Equal / Balanced",
+            "logit": 0.6297203898429871,
+            "v": 0.5578596591949463
+          },
+          {
+            "label": "White Severe Deficit (Lost)",
+            "logit": 4.31090784072876,
+            "v": 0.9996398091316223
+          }
+        ],
+        "steer_swing": -0.4404946565628052
+      }
+    ]
+  }
+}

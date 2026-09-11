@@ -1,0 +1,97 @@
+{
+  "experiment": "Mechanistic Interpretability & Semantic Activation Mapping via Natural Language Autoencoder",
+  "model_checkpoint": "chess_nla_rl/checkpoints/nla_eval_sole",
+  "target_engine": "SE-ResNet-20 Dual-Head Chess Neural Network (Ahmed Darwish)",
+  "latent_dimension": 768,
+  "value_head_slice": "0:256",
+  "policy_head_slice": "256:768",
+  "concepts": {
+    "king_safety_and_checkmate_threat": {
+      "text_pos": "The black king is completely exposed and under a devastating mating attack with direct checks.",
+      "text_neg": "The black king is completely safe and securely castled behind a solid, unbreached pawn wall.",
+      "energy_distribution": {
+        "value_head_pct": 64.9,
+        "policy_head_pct": 35.1
+      },
+      "top_overall_dimensions": [
+        {"dim": 65, "subhead": "ValueHead", "delta": 7.5000},
+        {"dim": 6, "subhead": "ValueHead", "delta": 7.0000},
+        {"dim": 17, "subhead": "ValueHead", "delta": 6.7500},
+        {"dim": 165, "subhead": "ValueHead", "delta": 6.7500},
+        {"dim": 198, "subhead": "ValueHead", "delta": 6.6250}
+      ],
+      "real_dataset_verification": {
+        "description": "Mean activation on 56 real checking positions (board.is_check()) vs 200 normal safe positions",
+        "dim_65": {"checking_mean": 5.8538, "normal_mean": 5.4998, "diff": 0.3540},
+        "dim_6": {"checking_mean": 5.8426, "normal_mean": 5.4721, "diff": 0.3706},
+        "dim_17": {"checking_mean": 6.0096, "normal_mean": 5.6085, "diff": 0.4010}
+      }
+    },
+    "passed_pawn_and_promotion_threat": {
+      "text_pos": "White has an advanced passed pawn on the seventh rank ready to promote into a queen.",
+      "text_neg": "The pawn structure is completely locked, symmetrical, and blocked with no passed pawns anywhere.",
+      "energy_distribution": {
+        "value_head_pct": 37.7,
+        "policy_head_pct": 62.3
+      },
+      "top_overall_dimensions": [
+        {"dim": 674, "subhead": "PolicyHead(418)", "delta": -13.4062},
+        {"dim": 75, "subhead": "ValueHead", "delta": -9.7500},
+        {"dim": 690, "subhead": "PolicyHead(434)", "delta": -7.2969},
+        {"dim": 241, "subhead": "ValueHead", "delta": 5.5469},
+        {"dim": 198, "subhead": "ValueHead", "delta": -4.7500}
+      ],
+      "real_dataset_verification": {
+        "description": "Mean activation on real boards with advanced pawns (Rank 6/7) vs normal boards",
+        "dim_75": {
+          "advanced_pawn_mean": 12.1545,
+          "normal_board_mean": 5.2667,
+          "surge_difference": 6.8878,
+          "ratio": 2.3078
+        }
+      }
+    },
+    "material_advantage_vs_deficit": {
+      "text_pos": "White has a decisive material advantage with an extra queen and rook, completely winning.",
+      "text_neg": "White has suffered a severe material deficit with no pieces remaining, completely lost.",
+      "energy_distribution": {
+        "value_head_pct": 40.2,
+        "policy_head_pct": 59.8
+      },
+      "top_overall_dimensions": [
+        {"dim": 333, "subhead": "PolicyHead(77)", "delta": -3.7100},
+        {"dim": 182, "subhead": "ValueHead", "delta": -3.2383},
+        {"dim": 192, "subhead": "ValueHead", "delta": 3.0000},
+        {"dim": 20, "subhead": "ValueHead", "delta": -3.0000},
+        {"dim": 105, "subhead": "ValueHead", "delta": 2.9531}
+      ],
+      "engine_weight_verification": {
+        "dim": 182,
+        "learned_linear_weight_w182": -0.117959,
+        "correlation_with_real_engine_logits_2501_boards": -0.2432
+      }
+    },
+    "rook_activity_and_open_files": {
+      "text_pos": "White possesses an extremely active rook controlling the open d-file and penetrating to the seventh rank.",
+      "text_neg": "White has completely passive and trapped rooks boxed in behind friendly pawns with zero activity.",
+      "energy_distribution": {
+        "value_head_pct": 55.5,
+        "policy_head_pct": 44.5
+      },
+      "top_overall_dimensions": [
+        {"dim": 170, "subhead": "ValueHead", "delta": -5.5781},
+        {"dim": 165, "subhead": "ValueHead", "delta": -4.2500},
+        {"dim": 75, "subhead": "ValueHead", "delta": -4.2500},
+        {"dim": 58, "subhead": "ValueHead", "delta": -4.0977},
+        {"dim": 35, "subhead": "ValueHead", "delta": 3.9453}
+      ]
+    }
+  },
+  "causal_latent_steering_verification": {
+    "base_position_idx": 102,
+    "base_fen": "6N1/3k4/1R6/1bp1p1p1/4P1P1/1r1PKP2/8/8 b - - 0 54",
+    "base_verbalizer_output": "Looking at the board, Qd4+ stands out as a viable move. It basically creates a discovered attack with the rook against the pawn; captures the pawn; creates a passed pawn; creates a passed pawn threat; creates a threat against the pawn on d5; creates a threat against the pawn on d6.",
+    "sparse_king_safety_steered_output": "Looking at the board, Kd4 stands out as a mistake. It basically creates a discovered attack with the rook against the pawn; captures the pawn; creates attacking chances against the opponent's king. Strategically, you should improve active piece coordination.",
+    "sparse_passed_pawn_steered_output": "Looking at the passed move g3, a smart move is Move 1. Why? Looking at the passed move, we see that Kd4 is a brilliant tactical opportunity. Why? Looking at the passed move, we see that Kd4 is a brilliant tactical move."
+  }
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "case_id": "Case 1: Position 200 (Advantage -> Deficit Flip)",
+    "fen": "2rr2k1/pp3ppp/5n2/4p3/8/P1NPPB1q/1PPQ4/2RR3K w - - 0 20",
+    "true_logit": 1.0198819637298584,
+    "original_text": "Looking at the board, Bc4 stands out as a serious blunder. It leaves Qd4 strong promotion; creates a threat for the pawn on Bc4. Key takeaway: You're up material - consider trading your pieces to simplify toward a winning endgame.",
+    "counterfactual_text": "Looking at the board, White is losing with a severe material deficit. It creates threats against White's King. Key takeaway: You're down material with no counterplay - Black is completely winning with an overwhelming attack.",
+    "orig_logit_raw": 36.054195404052734,
+    "cf_logit_raw": 29.30076789855957,
+    "delta_logit_raw": -6.753427505493164,
+    "orig_logit_scaled": 2.633249044418335,
+    "cf_logit_scaled": 2.0736477375030518,
+    "delta_logit_scaled": -0.5596013069152832,
+    "expected_direction": "NEGATIVE (Downwards shift toward deficit)",
+    "confirmed": true
+  },
+  {
+    "case_id": "Case 2: Position 10 (Deficit -> Advantage Flip)",
+    "fen": "3r4/p4pkp/1p2P1p1/2p1Qp2/5nq1/2P5/PP1N1P2/4RK2 b - - 1 28",
+    "true_logit": -13.068344116210938,
+    "original_text": "Looking at the board, Qd4+ stands out as a brilliant tactical stroke. It basically creates a threat of creating a pawn advantage for the opponent. Key takeaway: You're down material - seek tactical complications and active piece play.",
+    "counterfactual_text": "Looking at the board, White is completely winning and has an overwhelming position. It creates an unstoppable mating attack against Black. Key takeaway: You're up material with a decisive winning advantage - simplify into an easy win.",
+    "orig_logit_raw": 21.482585906982422,
+    "cf_logit_raw": 27.477069854736328,
+    "delta_logit_raw": 5.994483947753906,
+    "orig_logit_scaled": 5.302591323852539,
+    "cf_logit_scaled": 6.900569438934326,
+    "delta_logit_scaled": 1.597978115081787,
+    "expected_direction": "POSITIVE (Upwards shift toward advantage)",
+    "confirmed": true
+  },
+  {
+    "case_id": "Case 3: Position 25 (Endgame Deficit -> Winning Advantage Flip)",
+    "fen": "8/p5pk/7p/1p6/6N1/PP3PKP/2r5/8 b - - 0 43",
+    "true_logit": -28.980924606323242,
+    "original_text": "Looking at the board, Kf4 stands out as tactical opportunity. It basically creates a discovered attack with the pawn against the pawn. Key takeaway: Despite your material deficit, create counterplay with active king and passed pawns if possible.",
+    "counterfactual_text": "Looking at the board, Black has an unstoppable passed pawn and massive material advantage. Key takeaway: You have a decisive winning advantage - push your passed pawns to promote to a Queen and win.",
+    "orig_logit_raw": 19.646638870239258,
+    "cf_logit_raw": 26.338197708129883,
+    "delta_logit_raw": 6.691558837890625,
+    "orig_logit_scaled": 8.22729778289795,
+    "cf_logit_scaled": 11.223143577575684,
+    "delta_logit_scaled": 2.9958457946777344,
+    "expected_direction": "POSITIVE (Upwards shift toward winning advantage)",
+    "confirmed": true
+  },
+  {
+    "case_id": "Case 4: Position 0 (Tactical Opportunity -> Crushing Deficit Flip)",
+    "fen": "r1bq1rk1/1pp1bpp1/pn2p2p/4P3/2BP1B2/2P2N2/5PPP/R2QR1K1 w - - 8 15",
+    "true_logit": 7.162861347198486,
+    "original_text": "\u2022 Move: Qd4\n\u2022 Evaluation: Tactical Opportunity\n\u2022 Tactical Reason: Retries the pawn against the rook\n\u2022 Strategic Plan: Improve active piece coordination",
+    "counterfactual_text": "\u2022 Move: Qd4\n\u2022 Evaluation: A fatal blunder\n\u2022 Tactical Reason: Leaves the queen undefended and concedes a severe material deficit\n\u2022 Strategic Plan: White is completely losing with no counterplay against Black's winning attack",
+    "orig_logit_raw": 13.563554763793945,
+    "cf_logit_raw": 21.850473403930664,
+    "delta_logit_raw": 8.286918640136719,
+    "orig_logit_scaled": 2.1767141819000244,
+    "cf_logit_scaled": 3.6759023666381836,
+    "delta_logit_scaled": 1.4991881847381592,
+    "expected_direction": "NEGATIVE (Downwards shift toward blunder/deficit)",
+    "confirmed": false
+  }
+]

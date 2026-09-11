@@ -1,0 +1,212 @@
+[
+  {
+    "name": "Position 63: Balanced Ruy Lopez Opening",
+    "idx": 63,
+    "regime": "Balanced / Highly Sensitive (|V| ~ 0.10)",
+    "fen": "r1bqk2r/pppp1ppp/2n2n2/1Bb1p3/4P3/2P2N2/PP1P1PPP/RNBQ1RK1 b kq - 0 5",
+    "true_logit": -0.10449198633432388,
+    "true_v": -0.10411334037780762,
+    "interventions": [
+      {
+        "label": "White Decisive Win",
+        "text": "Looking at the board, White is completely winning and has an overwhelming position. Key takeaway: White is up material with a decisive winning advantage and unstoppable attack against Black.",
+        "logit_scaled": 0.9531953930854797,
+        "final_v_scaled": 0.7412262558937073,
+        "logit_raw": 24.80507469177246,
+        "final_v_raw": 1.0
+      },
+      {
+        "label": "Dead Equal / Balanced",
+        "text": "Looking at the board, the position is quiet, balanced, and equal. Key takeaway: Both sides have equal material, balanced piece activity, and no advantage for either side.",
+        "logit_scaled": 0.942348062992096,
+        "final_v_scaled": 0.7362992167472839,
+        "logit_raw": 24.632341384887695,
+        "final_v_raw": 1.0
+      },
+      {
+        "label": "White Severe Deficit (Lost)",
+        "text": "Looking at the board, White is completely lost with a severe material deficit. Key takeaway: White is down material with no counterplay, facing an overwhelming attack and lost game.",
+        "logit_scaled": 1.1539864540100098,
+        "final_v_scaled": 0.8190703988075256,
+        "logit_raw": 29.648557662963867,
+        "final_v_raw": 1.0
+      }
+    ],
+    "max_swing_delta_v": 0.0827711820602417
+  },
+  {
+    "name": "Position 95: Contested Knight Endgame",
+    "idx": 95,
+    "regime": "Balanced / Highly Sensitive (|V| ~ 0.12)",
+    "fen": "8/p4kpp/1pp5/1P1p1P2/P1nPp1P1/2N1P3/5K1P/8 b - - 0 33",
+    "true_logit": -0.12096205353736877,
+    "true_v": -0.12037552148103714,
+    "interventions": [
+      {
+        "label": "White Decisive Win",
+        "text": "Looking at the board, White is completely winning and has an overwhelming position. Key takeaway: White is up material with a decisive winning advantage and unstoppable attack against Black.",
+        "logit_scaled": 1.7575522661209106,
+        "final_v_scaled": 0.9422289729118347,
+        "logit_raw": 24.80507469177246,
+        "final_v_raw": 1.0
+      },
+      {
+        "label": "Dead Equal / Balanced",
+        "text": "Looking at the board, the position is quiet, balanced, and equal. Key takeaway: Both sides have equal material, balanced piece activity, and no advantage for either side.",
+        "logit_scaled": 1.7375293970108032,
+        "final_v_scaled": 0.9399394392967224,
+        "logit_raw": 24.632341384887695,
+        "final_v_raw": 1.0
+      },
+      {
+        "label": "White Severe Deficit (Lost)",
+        "text": "Looking at the board, White is completely lost with a severe material deficit. Key takeaway: White is down material with no counterplay, facing an overwhelming attack and lost game.",
+        "logit_scaled": 2.128187417984009,
+        "final_v_scaled": 0.9720489978790283,
+        "logit_raw": 29.648557662963867,
+        "final_v_raw": 1.0
+      }
+    ],
+    "max_swing_delta_v": 0.03210955858230591
+  },
+  {
+    "name": "Position 102: Dead Even Rook Endgame",
+    "idx": 102,
+    "regime": "Dead Even (|V| ~ 0.00)",
+    "fen": "6N1/3k4/1R6/1bp1p1p1/4P1P1/1r1PKP2/8/8 b - - 0 54",
+    "true_logit": 0.0022761141881346703,
+    "true_v": 0.002276110230013728,
+    "interventions": [
+      {
+        "label": "White Decisive Win",
+        "text": "Looking at the board, White is completely winning and has an overwhelming position. Key takeaway: White is up material with a decisive winning advantage and unstoppable attack against Black.",
+        "logit_scaled": 1.7727434635162354,
+        "final_v_scaled": 0.9439093470573425,
+        "logit_raw": 24.80507469177246,
+        "final_v_raw": 1.0
+      },
+      {
+        "label": "Dead Equal / Balanced",
+        "text": "Looking at the board, the position is quiet, balanced, and equal. Key takeaway: Both sides have equal material, balanced piece activity, and no advantage for either side.",
+        "logit_scaled": 1.7525476217269897,
+        "final_v_scaled": 0.9416648149490356,
+        "logit_raw": 24.632341384887695,
+        "final_v_raw": 1.0
+      },
+      {
+        "label": "White Severe Deficit (Lost)",
+        "text": "Looking at the board, White is completely lost with a severe material deficit. Key takeaway: White is down material with no counterplay, facing an overwhelming attack and lost game.",
+        "logit_scaled": 2.1465864181518555,
+        "final_v_scaled": 0.9730452299118042,
+        "logit_raw": 29.648557662963867,
+        "final_v_raw": 1.0
+      }
+    ],
+    "max_swing_delta_v": 0.031380414962768555
+  },
+  {
+    "name": "Position 163: Quiet Queenless Middlegame",
+    "idx": 163,
+    "regime": "Dead Even (|V| ~ 0.00)",
+    "fen": "6k1/1p1b1pbp/4p1p1/2BpP3/n2P3P/8/1PrN1PP1/1RR3K1 b - - 0 29",
+    "true_logit": -0.005187773145735264,
+    "true_v": -0.005187726579606533,
+    "interventions": [
+      {
+        "label": "White Decisive Win",
+        "text": "Looking at the board, White is completely winning and has an overwhelming position. Key takeaway: White is up material with a decisive winning advantage and unstoppable attack against Black.",
+        "logit_scaled": 2.2019455432891846,
+        "final_v_scaled": 0.9758362174034119,
+        "logit_raw": 24.80507469177246,
+        "final_v_raw": 1.0
+      },
+      {
+        "label": "Dead Equal / Balanced",
+        "text": "Looking at the board, the position is quiet, balanced, and equal. Key takeaway: Both sides have equal material, balanced piece activity, and no advantage for either side.",
+        "logit_scaled": 2.1768534183502197,
+        "final_v_scaled": 0.9746084213256836,
+        "logit_raw": 24.632341384887695,
+        "final_v_raw": 1.0
+      },
+      {
+        "label": "White Severe Deficit (Lost)",
+        "text": "Looking at the board, White is completely lost with a severe material deficit. Key takeaway: White is down material with no counterplay, facing an overwhelming attack and lost game.",
+        "logit_scaled": 2.6664159297943115,
+        "final_v_scaled": 0.9903857111930847,
+        "logit_raw": 29.648557662963867,
+        "final_v_raw": 1.0
+      }
+    ],
+    "max_swing_delta_v": 0.015777289867401123
+  },
+  {
+    "name": "Position 200: Moderate White Advantage",
+    "idx": 200,
+    "regime": "Decisive White Lead (V ~ +0.77)",
+    "fen": "2rr2k1/pp3ppp/5n2/4p3/8/P1NPPB1q/1PPQ4/2RR3K w - - 0 20",
+    "true_logit": 1.0198819637298584,
+    "true_v": 0.7698184251785278,
+    "interventions": [
+      {
+        "label": "White Decisive Win",
+        "text": "Looking at the board, White is completely winning and has an overwhelming position. Key takeaway: White is up material with a decisive winning advantage and unstoppable attack against Black.",
+        "logit_scaled": 1.7328827381134033,
+        "final_v_scaled": 0.9393956661224365,
+        "logit_raw": 24.80507469177246,
+        "final_v_raw": 1.0
+      },
+      {
+        "label": "Dead Equal / Balanced",
+        "text": "Looking at the board, the position is quiet, balanced, and equal. Key takeaway: Both sides have equal material, balanced piece activity, and no advantage for either side.",
+        "logit_scaled": 1.7131413221359253,
+        "final_v_scaled": 0.9370318055152893,
+        "logit_raw": 24.632341384887695,
+        "final_v_raw": 1.0
+      },
+      {
+        "label": "White Severe Deficit (Lost)",
+        "text": "Looking at the board, White is completely lost with a severe material deficit. Key takeaway: White is down material with no counterplay, facing an overwhelming attack and lost game.",
+        "logit_scaled": 2.098308801651001,
+        "final_v_scaled": 0.9703533053398132,
+        "logit_raw": 29.648557662963867,
+        "final_v_raw": 1.0
+      }
+    ],
+    "max_swing_delta_v": 0.033321499824523926
+  },
+  {
+    "name": "Position 10: Sharp Black Attack",
+    "idx": 10,
+    "regime": "Decisive Black Lead (V ~ -1.00)",
+    "fen": "3r4/p4pkp/1p2P1p1/2p1Qp2/5nq1/2P5/PP1N1P2/4RK2 b - - 1 28",
+    "true_logit": -13.068344116210938,
+    "true_v": -1.0,
+    "interventions": [
+      {
+        "label": "White Decisive Win",
+        "text": "Looking at the board, White is completely winning and has an overwhelming position. Key takeaway: White is up material with a decisive winning advantage and unstoppable attack against Black.",
+        "logit_scaled": 6.1628522872924805,
+        "final_v_scaled": 0.9999911189079285,
+        "logit_raw": 24.80507469177246,
+        "final_v_raw": 1.0
+      },
+      {
+        "label": "Dead Equal / Balanced",
+        "text": "Looking at the board, the position is quiet, balanced, and equal. Key takeaway: Both sides have equal material, balanced piece activity, and no advantage for either side.",
+        "logit_scaled": 6.0925774574279785,
+        "final_v_scaled": 0.9999898076057434,
+        "logit_raw": 24.632341384887695,
+        "final_v_raw": 1.0
+      },
+      {
+        "label": "White Severe Deficit (Lost)",
+        "text": "Looking at the board, White is completely lost with a severe material deficit. Key takeaway: White is down material with no counterplay, facing an overwhelming attack and lost game.",
+        "logit_scaled": 7.463687419891357,
+        "final_v_scaled": 0.9999993443489075,
+        "logit_raw": 29.648557662963867,
+        "final_v_raw": 1.0
+      }
+    ],
+    "max_swing_delta_v": 9.5367431640625e-06
+  }
+]

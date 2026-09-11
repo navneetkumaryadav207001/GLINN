@@ -1,0 +1,177 @@
+[
+  {
+    "idx": 0,
+    "description": "Middlegame: White Bishop Pair Advantage",
+    "fen": "r1bq1rk1/1pp1bpp1/pn2p2p/4P3/2BP1B2/2P2N2/5PPP/R2QR1K1 w - - 8 15",
+    "side_to_move": "White",
+    "engine_final_answer": {
+      "value": 0.9999988079071045,
+      "assessment": "Decisive White Advantage / White Winning",
+      "top_moves": [
+        {
+          "uci": "c4d3",
+          "san": "Bd3",
+          "probability": 0.9960450530052185
+        },
+        {
+          "uci": "c4b3",
+          "san": "Bb3",
+          "probability": 0.003954869695007801
+        },
+        {
+          "uci": "c4f1",
+          "san": "Bf1",
+          "probability": 1.9216962243717717e-08
+        }
+      ]
+    },
+    "verbalizer_reading": "\u2022 Move: Qd4\n\u2022 Evaluation: Tactical Opportunity\n\u2022 Tactical Reason: Retries the pawn against the rook\n\u2022 Strategic Plan: Improve active piece coordination",
+    "eval_aligned": false,
+    "move_mentioned": false
+  },
+  {
+    "idx": 2,
+    "description": "Endgame: Queenless Bishop+Rook",
+    "fen": "r7/p3R3/bpp3k1/3p1p1p/5B1P/4K3/P1P2PP1/8 b - - 3 26",
+    "side_to_move": "Black",
+    "engine_final_answer": {
+      "value": 0.9981045722961426,
+      "assessment": "Decisive White Advantage / White Winning",
+      "top_moves": [
+        {
+          "uci": "g6f6",
+          "san": "Kf6",
+          "probability": 0.9999990463256836
+        },
+        {
+          "uci": "d5d4",
+          "san": "d4+",
+          "probability": 6.286874167926726e-07
+        },
+        {
+          "uci": "a8e8",
+          "san": "Re8",
+          "probability": 2.858519110304769e-07
+        }
+      ]
+    },
+    "verbalizer_reading": "Looking at the board, Nf6 was a mistake. An important move is to favored promotion of the pawn. Strategically, you should improve active piece activity.",
+    "eval_aligned": false,
+    "move_mentioned": false
+  },
+  {
+    "idx": 10,
+    "description": "Tactical: Black Checkmate Threat",
+    "fen": "3r4/p4pkp/1p2P1p1/2p1Qp2/5nq1/2P5/PP1N1P2/4RK2 b - - 1 28",
+    "side_to_move": "Black",
+    "engine_final_answer": {
+      "value": -1.0,
+      "assessment": "Decisive Black Advantage / Black Winning",
+      "top_moves": [
+        {
+          "uci": "f7f6",
+          "san": "f6",
+          "probability": 1.0
+        },
+        {
+          "uci": "g7f8",
+          "san": "Kf8",
+          "probability": 2.459097920952391e-13
+        },
+        {
+          "uci": "g7g8",
+          "san": "Kg8",
+          "probability": 3.170971514879217e-14
+        }
+      ]
+    },
+    "verbalizer_reading": "Looking at the board, Qd4+ stands out as a brilliant tactical stroke. It basically creates a threat of creating a pawn advantage for the opponent. Key takeaway: You're down material - seek tactical complications and active piece play.",
+    "eval_aligned": true,
+    "move_mentioned": false
+  },
+  {
+    "idx": 25,
+    "description": "Endgame: Black King Counterplay",
+    "fen": "8/p5pk/7p/1p6/6N1/PP3PKP/2r5/8 b - - 0 43",
+    "side_to_move": "Black",
+    "engine_final_answer": {
+      "value": -1.0,
+      "assessment": "Decisive Black Advantage / Black Winning",
+      "top_moves": [
+        {
+          "uci": "c2c3",
+          "san": "Rc3",
+          "probability": 0.9999992847442627
+        },
+        {
+          "uci": "h6h5",
+          "san": "h5",
+          "probability": 7.661645327061706e-07
+        },
+        {
+          "uci": "c2a2",
+          "san": "Ra2",
+          "probability": 5.88342778939932e-08
+        }
+      ]
+    },
+    "verbalizer_reading": "Looking at the board, Kf4 stands out as tactical opportunity. It basically creates a discovered attack with the pawn against the pawn. Key takeaway: Despite your material deficit, create counterplay with active king and passed pawns if possible.",
+    "eval_aligned": true,
+    "move_mentioned": false
+  },
+  {
+    "idx": 50,
+    "description": "Opening: Classical King's Indian",
+    "fen": "rnbq1rk1/pp2ppbp/2pp1np1/6B1/2PP4/2N2N2/PP1QPPPP/R3KB1R w KQ - 0 7",
+    "side_to_move": "White",
+    "engine_final_answer": {
+      "value": 1.0,
+      "assessment": "Decisive White Advantage / White Winning",
+      "top_moves": [
+        {
+          "uci": "g5h6",
+          "san": "Bh6",
+          "probability": 0.9967381358146667
+        },
+        {
+          "uci": "e2e4",
+          "san": "e4",
+          "probability": 0.003261496312916279
+        },
+        {
+          "uci": "h2h4",
+          "san": "h4",
+          "probability": 3.018118661657354e-07
+        }
+      ]
+    },
+    "verbalizer_reading": "\u2022 Move: d5\n\u2022 Evaluation: a serious blunder\n\u2022 Tactical Reason: advances a central pawn to fight for the center\n\u2022 Strategic Plan: Look for tactical opportunities while improving your best\u5f00\u5c40\u7b56\u7565",
+    "eval_aligned": false,
+    "move_mentioned": false
+  },
+  {
+    "idx": 200,
+    "description": "Middlegame: White Simplification & King Safety",
+    "fen": "2rr2k1/pp3ppp/5n2/4p3/8/P1NPPB1q/1PPQ4/2RR3K w - - 0 20",
+    "side_to_move": "White",
+    "engine_final_answer": {
+      "value": 0.7701935172080994,
+      "assessment": "Decisive White Advantage / White Winning",
+      "top_moves": [
+        {
+          "uci": "d2h2",
+          "san": "Qh2",
+          "probability": 1.0
+        },
+        {
+          "uci": "h1g1",
+          "san": "Kg1",
+          "probability": 1.5685203502432118e-18
+        }
+      ]
+    },
+    "verbalizer_reading": "Looking at the board, Bc4 stands out as a serious blunder. It leaves Qd4 strong promotion; creates a threat for the pawn on Bc4. Key takeaway: You're up material - consider trading your pieces to simplify toward a winning endgame.",
+    "eval_aligned": true,
+    "move_mentioned": false
+  }
+]
