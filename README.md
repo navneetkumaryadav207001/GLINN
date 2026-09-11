@@ -8,7 +8,8 @@
 
 > **Official Research Repository and Reproduction Package for:**  
 > **"GLINN: General Language Interface for Neural Networks — Bidirectional Latent Autoencoding, Semantic Compilation, and Causal Steering"**  
-> *Advanced Interpretability & Reinforcement Learning Group*
+> **Author:** Navneet Kumar Yadav (*Independent Researcher*)  
+> **Repository:** [https://github.com/navneetkumaryadav207001/GLINN](https://github.com/navneetkumaryadav207001/GLINN)
 
 ---
 
@@ -307,11 +308,12 @@ The research paper is written in clean, modern LaTeX and ready for submission:
 ## Citation
 
 ```bibtex
-@article{glinn2026general,
+@article{yadav2026glinn,
   title={GLINN: General Language Interface for Neural Networks — Bidirectional Latent Autoencoding, Semantic Compilation, and Causal Steering},
-  author={Advanced Interpretability \& Reinforcement Learning Group},
+  author={Yadav, Navneet Kumar},
   journal={arXiv preprint},
-  year={2026}
+  year={2026},
+  url={https://github.com/navneetkumaryadav207001/GLINN}
 }
 ```
 
