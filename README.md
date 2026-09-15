@@ -5,6 +5,7 @@
 [![HuggingFace](https://img.shields.io/badge/🤗%20HuggingFace-Qwen2.5-yellow.svg)](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct)
 [![Overleaf Ready](https://img.shields.io/badge/Overleaf-Paper%20Ready-green.svg)](paper/nla_paper.zip)
 [![License: MIT](https://img.shields.io/badge/License-MIT-purple.svg)](LICENSE)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22765804.svg)](https://doi.org/10.5281/zenodo.22765804)
 
 > **Official Research Repository and Reproduction Package for:**  
 > **"GLINN: General Language Interface for Neural Networks — Bidirectional Latent Autoencoding, Semantic Compilation, and Causal Steering"**  
@@ -311,9 +312,10 @@ The research paper is written in clean, modern LaTeX and ready for submission:
 @article{yadav2026glinn,
   title={GLINN: General Language Interface for Neural Networks — Bidirectional Latent Autoencoding, Semantic Compilation, and Causal Steering},
   author={Yadav, Navneet Kumar},
-  journal={arXiv preprint},
+  journal={Zenodo Preprint},
   year={2026},
-  url={https://github.com/navneetkumaryadav207001/GLINN}
+  doi={10.5281/zenodo.22765804},
+  url={https://doi.org/10.5281/zenodo.22765804}
 }
 ```
 
